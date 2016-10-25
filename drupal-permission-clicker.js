@@ -31,7 +31,7 @@ function clickPermissions(mapping, profile) {
 
   if (scriptLocation) {
     // Load profile script.
-    jQuery.getScript(scriptLocation + '/profiles/' + profile + '.js', function() {
+    jQuery.getScript(scriptLocation + '/master/profiles/' + profile + '.js', function() {
       // Map role id to role name.
       for (var k = 0; k < permissions.length; k++) {
         permissions[k].rid = mapping[permissions[k].name];
