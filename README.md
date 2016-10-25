@@ -5,7 +5,9 @@ Simple scripts for setting up Drupal user roles.
 Script provides functionality for setting up role permissions. Useful for sites without access to code and features when you need to setup a bunch of specific permissions for specific user roles.
 
 ### How to use
-Copy-paste next script into browser console:
+
+1. Open /admin/people/permissions page.
+2. Copy-paste next script into browser console:
 ```
 var mapping = {
   anonymous: 1,
@@ -32,7 +34,9 @@ Jquery is needed for running this script.
 Script provides functionality for getting role permissions. Useful when you need to dump permissions from standard site.
 
 ### How to use
-Copy-paste next script into browser console:
+
+1. Open /admin/people/permissions page.
+2. Copy-paste next script into browser console:
 ```
 (function(d, script) {script = d.createElement('script');script.src = 'https://rawgit.com/pavelfluffy/drupal-permission-clicker/master/drupal-permission-getter.js';script.onload = function(){getPermissions();};  d.getElementsByTagName('head')[0].appendChild(script);}(document));
 ```
