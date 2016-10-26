@@ -6,7 +6,7 @@ Script provides functionality for setting up role permissions. Useful for sites 
 
 ### How to use
 
-1. Open /admin/people/permissions page.
+1. Open `/admin/people/permissions` page.
 2. Copy-paste next script into browser console:
 ```
 var mapping = {
@@ -20,15 +20,12 @@ var mapping = {
 }, profile = 'custom';
 (function(d, script) {script = d.createElement('script');script.src = 'https://rawgit.com/pavelfluffy/drupal-permission-clicker/master/drupal-permission-clicker.js';script.onload = function(){clickPermissions(mapping, profile);};  d.getElementsByTagName('head')[0].appendChild(script);}(document));
 ```
-where `ROLE_ID` - rid of a given role, `profile` - profile with permissions.
+where `ROLE_ID` - an ID of Drupal role, `profile` - profile with permissions.
 
 Available profiles for now are:
 
-1. custom - contains common permissions for custom sites.
-2. gardens - contains common permissions for gardens sites.
-
-### Dependencies
-Jquery is needed for running this script.
+1. [custom](profiles/custom.js) - contains common permissions for custom sites.
+2. [gardens](profiles/gardens.js) - contains common permissions for [gardens](https://www.drupalgardens.com) sites.
 
 ## drupal-permission-getter.js
 Script provides functionality for getting role permissions. Useful when you need to dump permissions from standard site.
@@ -40,6 +37,3 @@ Script provides functionality for getting role permissions. Useful when you need
 ```
 (function(d, script) {script = d.createElement('script');script.src = 'https://rawgit.com/pavelfluffy/drupal-permission-clicker/master/drupal-permission-getter.js';script.onload = function(){getPermissions();};  d.getElementsByTagName('head')[0].appendChild(script);}(document));
 ```
-
-### Dependencies
-Jquery is needed for running this script.
