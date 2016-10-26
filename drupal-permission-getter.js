@@ -9,8 +9,7 @@ function getPermissions() {
   var result = [];
 
   jQuery('input:checked').each(function() {
-    var $checkbox = jQuery(this),
-      data = $checkbox.attr('name').replace(']', '').split('[');
+    var data = this.name.replace(']', '').split('[');
 
     if (data[0]) {
       if (!result[data[0]]) {
