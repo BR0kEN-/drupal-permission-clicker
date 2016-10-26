@@ -52,6 +52,6 @@ function clickPermissions(mapping, profile) {
     });
   }
   else {
-    console.log('Error: Can not load ' + profile + '.js file');
+    console.error('Error: Can not load ' + profile + '.js file');
   }
 }
